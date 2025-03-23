@@ -45,6 +45,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "<div class='container'><p>No donations found.</p></div>";
 }
+echo "Updated version after resolving conflict";
 
 $conn->close();
 ?>
