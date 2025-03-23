@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Give Scholarship - NGO Website</title>
+<link rel="stylesheet" href="scholarship.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="NGO logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutSection">About Us</a></li>
+                <li><a href="index.html#programsSection">Programs</a></li>
+                <li><a href="index.html#educationSection">Education</a></li>
+                <li><a href="index.html#gallerySection">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Scholarship Form Section -->
+<section class="scholarship-form-section">
+    <div class="container">
+        <h2>Give Scholarship 🎓</h2>
+        <form action="scholarship.php" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="scholarship-type">Scholarship Type:</label>
+                <select id="scholarship-type" name="scholarship-type" required>
+                    <option value="Merit-Based">Merit-Based</option>
+                    <option value="Need-Based">Need-Based</option>
+                </select><br><br>    </div>
+            <div class="form-group">
+                <label for="amount">Scholarship Amount :</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Why do you want to give this scholarship?</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="netBanking">Net Banking</option>
+                    <option value="upi">UPI</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 NGO. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    background-image: url(images/back..jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 2;
+}
+
+header .container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header .container1 .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    background-color: red;
+}
+
+
+
+.donation-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: red;
+    font-weight: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: red;
+    margin-bottom: 30px;
+}
+
+form {
+    display:block;
+    
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #524e4e; 
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]#contact
+ { 
+    width: 100%; 
+    
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ff6666; 
+}
+
+
+button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; 
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+.donationBox {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333; 
+}
+
+.donationBox .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff3333; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

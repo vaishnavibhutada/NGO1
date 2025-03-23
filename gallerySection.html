@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Poppins: wght@200; 300;400;500;600;700;800;900&display=swap");
+:root{
+    --themeRed: Red;
+    --grey: #efefef;
+}
+
+html{
+    scrollbar-width: smooth;
+}
+button,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer {
+width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    transition: linear;
+    }
+
+.container p{
+    font-size: 15px;
+    font-style: normal;
+    text-align: justify;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 90px auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+section{
+    padding: 100px 0;
+    position: relative;
+}
+
+        /* Header Styles */
+        
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding: 15px 0;
+    height: 95px;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+
+header nav ul {
+    List-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    Line-height: 75px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeRed);
+}
+
+        /* Gallery Styles */
+        .gallery {
+            padding: 20px;
+        }
+
+        .gallery .sectionTitle {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .gallery .galleryContainer {
+            column-count: 4;
+            column-gap: 20px;
+        }
+
+        .gallery .galleryContainer .item {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .gallery .galleryContainer img {
+            width: 100%;
+            display: block;
+            transition: 1s;
+        }
+
+        .gallery .galleryContainer .title {
+            position: absolute;
+            background-color: var(--grey);
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0;
+            z-index: 1;
+            transition: 0.4s;
+            color: #fff;
+        }
+
+        .gallery .galleryContainer .item:hover .title {
+            opacity: 1;
+        }
+
+        .gallery .galleryContainer .item:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="NGO Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                        <a href="aboutSection.html">About Us</a>
+                        </li>
+                        <li><a href="events.html">Events</a></li> 
+                        <li>
+                        <a href="programs.html">Programs</a>
+                        </li>
+                        <li>
+                        <a href="#educationSection">Education</a>
+                        </li>
+                        <li>
+                        <a href="signup.html">Join Us</a>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallerySection"> <div class="container">
+        <div class="sectionTitle">Gallery</div>
+        <div class="galleryContainer">
+        
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/s.jpg" alt="Image 1">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/2.jpg" alt="Image 2">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/3.jpg" alt="Image 3">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/4.jpg" alt="Image 4">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/5.jpg" alt="Image 5">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/programs/2.jpg" alt="Image 6">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/7.jpg" alt="Image 7">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/gallery/8.jpg" alt="Image 8">
+                </div>
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="images/img12 (2).jpg" alt="Image 9">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

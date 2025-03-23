@@ -1,0 +1,75 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fa7676;
+    background-image: url(./images/img12\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.payment-form {
+    margin-top: 50px;
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: white;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff4500;
+}
+
+button[type="submit"] {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}

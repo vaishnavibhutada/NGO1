@@ -1,0 +1,162 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* General Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    padding: 15px 0;
+    height: 75px;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Volunteer Form Section */
+.volunteer-form-section {
+    margin: 50px 0;
+    background-color: #f9f9f9; /* Optional light background color */
+    background-image: url('../images/v\ \(2\).jpg'); /* Move one directory up */
+
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center the image */
+    padding: 50px; /* Additional padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.volunteer-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+form {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for form background */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: red;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: white;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="events.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/main.min.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="NGO logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#aboutSection">About Us</a></li>
+                    <li><a href="index.html#programsSection">Programs</a></li>
+                    <li><a href="index.html#educationSection">Education</a></li>
+                    <li><a href="index.html#gallerySection">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li> <!-- Link to Events page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Event Registration Section -->
+    <div class="container1">
+        <h1>Register for an Event</h1>
+        <form action="register_event.php" method="post" id="eventSignupForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="event1">Event 1</option>
+                    <option value="event2">Event 2</option>
+                    <!-- Add more events as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="eventPreference">Event Preferences:</label>
+                <select id="eventPreference" name="eventPreference">
+                    <option value="online">Online</option>
+                    <option value="in-person">In-Person</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="volunteer">Would you like to volunteer for the event?</label>
+                <input type="checkbox" id="volunteer" name="volunteer" value="yes">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requirements or questions?"></textarea>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Calendar Section -->
+    <div class="calendar-container">
+        <h2>Upcoming Events</h2>
+        <div id="calendar"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: 'fetch_events.php' // Endpoint for fetching event data
+            });
+
+            calendar.render();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO - About Us</title>
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins: wght@200; 300;400;500;600;700;800;900&display=swap");
+:root{
+    --themeRed: Red;
+    --grey: #efefef;
+}
+
+html{
+    scrollbar-width: smooth;
+}
+button,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer {
+width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    transition: linear;
+    }
+
+.container p{
+    font-size: 15px;
+    font-style: normal;
+    text-align: justify;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 90px auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+section{
+    padding: 100px 0;
+    position: relative;
+}
+
+        /* Header Styles */
+        
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding: 15px 0;
+    height: 95px;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+
+header nav ul {
+    List-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    Line-height: 75px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeRed);
+}
+
+        /* About Us Section */
+        .fullContainer {
+            width: 100%;
+            background-color: var(--grey);
+            padding: 50px 0;
+        }
+
+        .container {
+            width: 1140px;
+            margin: auto;
+        }
+
+        .sectionTitle {
+            width: 300px;
+            border-bottom: 3px solid var(--themeRed);
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 200;
+            margin: 90px auto 50px;
+            position: relative;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sectionTitle::after {
+            display: inline-block;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background-color: var(--themeRed);
+            position: absolute;
+            left: calc(50% - 10px);
+            top: calc(75% - 7px);
+            transform: rotate(45deg) translate(50%, 50%);
+            border: 3px solid #fff;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        #aboutSection .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            position: relative;
+            height: 245px;
+        }
+
+        #aboutSection .cards > div {
+            width: 350px;
+            background-color: var(--grey);
+            padding: 20px;
+            color: #444;
+            text-align: center;
+            border-radius: 5px;
+            height: 300px;
+            border: 1px solid #ccc;
+            transition: 0.7s;
+        }
+
+        #aboutSection .cards > div:hover {
+            width: 400px;
+            margin-top: -20px;
+            border-color: var(--themeRed);
+            padding: 55px;
+            height: auto;
+        }
+
+        #aboutSection .cards > div .title {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: red;
+        }
+
+        #aboutSection .cards > div p {
+            font-size: 14px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #aboutSection .cards > div button {
+            border: 1px solid var(--themeRed);
+            outline: none;
+            padding: 7px 15px;
+            margin-top: 15px;
+            font-size: 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #aboutSection .cards > div:hover button {
+            background-color: var(--themeRed);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="NGO Logo">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#homeSection">Home</a>
+                    </li>
+                
+                    <li><a href="events.html">Events</a></li> 
+                    <li>
+                    <a href="programs.html">Programs</a>
+                    </li>
+                    <li>
+                    <a href="#educationSection">Education</a>
+                    </li>
+                    <li>
+                    <a href="gallerySection.html">Gallery</a>
+                    </li>
+                    <li>
+                    <a href="signup.html">Join Us</a>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- About Us Section -->
+    <section class="fullContainer" id="aboutSection">
+        <div class="container">
+            <h2 class="sectionTitle">About Us</h2>
+            <p>Welcome to NGO, where passion meets purpose to create positive change.</p>
+            <p>At NGO, we are committed to all that we do. Through all the help you give that we need, we strive to achieve what we need. Our dedicated team works tirelessly to accomplish all the goals of our NGO.</p>
+            <p>With a focus on all the work, we aim for a better life for all our kids. Through collaborative efforts and community engagement, we believe in making our vision come true.</p>
+            <p>Join us in our journey to make a difference. Together, we can and together we will. Explore our website to learn more about our work, get involved, or support our cause.</p>
+            
+            <div class="cards">
+                <!-- Donation Card -->
+                <div class="donationBox">
+                    <div class="title">Give Donation</div>
+                    <p>Your generosity will brighten the lives of our children, paving the way for a brighter future! 🌟 Your donation isn't just a gift; it's an investment in their dreams, their education, and their well-being. Together, we can make a difference! 🌈💕</p>
+                    <button onclick="window.location.href='donation.html'">Give Donation</button>
+                </div>
+                <!-- Volunteer Card -->
+                <div class="volunteerBox">
+                    <div class="title">Become A Volunteer</div>
+                    <p>Your support fuels our mission, making our work easier, more effective, and faster! 🚀 With your contribution, we can streamline processes, implement innovative solutions, and achieve our goals with greater efficiency. Together, we're a powerhouse of positive change! 💪✨</p>
+                    <button onclick="window.location.href='volunteer.html'">Become Now</button>
+                </div>
+                <!-- Scholarship Card -->
+                <div class="scholarshipBox">
+                    <div class="title">Give Scholarship</div>
+                    <p>Your support is the ultimate game-changer for our kids, providing them with the tools and resources they need to thrive! 📚💡 With your help, we can create a nurturing environment where they can learn, grow, and excel. Your contribution is more than helpful—it's transformational! 🌟✨</p>
+                    <button onclick="window.location.href='scholarship.html'">Give Immediately</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
